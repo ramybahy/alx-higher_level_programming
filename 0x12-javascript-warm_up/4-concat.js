@@ -1,3 +1,6 @@
 #!/usr/bin/node
-const args = process.argv.slice(2);
-console.log(args[0] + ' is ' + args[1]);
+const { argv } = require('process');
+const firstArgv = argv[2];
+const secondArgv = argv[3];
+const middleString = ' is ';
+console.log(firstArgv + middleString + secondArgv);
